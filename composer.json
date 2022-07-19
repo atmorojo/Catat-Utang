@@ -1,0 +1,7 @@
+{
+    "require": {
+        "twig/twig": "^3.0",
+        "simple-crud/simple-crud": "^7.5",
+        "pecee/simple-router": "4.3.7.2"
+    }
+}

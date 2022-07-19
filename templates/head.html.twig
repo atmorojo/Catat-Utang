@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Catatan Belanja</title>
+<link rel="stylesheet" href="/src/css/font-awesome.css" type="text/css" />
+<link rel="stylesheet" href="/src/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="/src/css/gijgo.min.css" type="text/css" />
+
+<style>
+body {padding: 0 30px;}
+.card{padding: 30px 40px;}
+.blue-text{color: #00BCD4}
+.form-control-label{margin-bottom: 0}
+input, textarea, button{
+	padding: 8px 15px;
+	border-radius: 5px !important;
+	margin: 5px 0px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	font-size: 18px !important;
+font-weight: 300}
+
+input:focus, textarea:focus{
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	border: 1px solid #00BCD4;
+	outline-width: 0;
+font-weight: 400}
+
+.btn-block{text-transform: uppercase;
+	font-size: 15px !important;
+	font-weight: 400;
+	height: 43px;
+cursor: pointer}
+
+.btn-block:hover{color: #fff !important}
+button:focus{
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+outline-width: 0}
+
+.tab-content {
+	border-bottom: 1px #ddd solid;
+	border-right: 1px #ddd solid;
+	border-left: 1px #ddd solid;
+	border-radius: 0 0 10px 10px;
+}
+
+.autocomplete {
+	/*the container must be positioned relative:*/
+	position: relative;
+	display: inline-block;
+}
+.autocomplete-items {
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+	border-top: none;
+	z-index: 99;
+	/*position the autocomplete items to be the same width as the container:*/
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin: -5px 18px;
+}
+.autocomplete-items div {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #fff;
+	border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+	/*when hovering an item:*/
+	background-color: #e9e9e9;
+}
+.autocomplete-active {
+	/*when navigating through the items using the arrow keys:*/
+	background-color: DodgerBlue !important;
+	color: #ffffff;
+}
+
+.gj-datepicker span .btn { border: 0px; }
+</style>
+</head>
+<body onload="formatDate(new Date(), 'dd-mm-yy')">
