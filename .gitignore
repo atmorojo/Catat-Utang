@@ -1,4 +1,6 @@
 vendor/*
+simaset/
+SIM-ASET/
 app/
 db/
 db.sqlite3
