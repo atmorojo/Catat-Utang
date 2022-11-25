@@ -14,9 +14,9 @@ touch db.sqlite3
 ```
 
 ## Potential Improvements
--[] Single connection file (my brain is fried so instaed of using one php connection file I connect with the database everytime I have to work with the DB).
--[] Routing (added a routing library but as eye said my brain is deeply fried).
--[] Clean up JS code.
+- [] Single connection file (my brain is fried so instaed of using one php connection file I connect with the database everytime I have to work with the DB). Should I use a singleton here?
+- [] Routing (added a routing library but as eye said my brain is deeply fried).
+- [] Clean up JS code. Please note that I'm running running Laragon on Win 7 machine as our local production machine and `npm` no longer saport Win 7 so bye-bye modern JS frameworks. What about [arrow-js](https://www.arrow-js.com/)?
 
 ## License
 I'm not sure help me decide plz (like anyone would give a care at this app).
